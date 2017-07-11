@@ -5,7 +5,7 @@
     <groupId>SampleApp</groupId>
     <artifactId>SampleApp</artifactId>
     <packaging>war</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <name>SampleApp</name>
   
     <properties>
@@ -43,6 +43,16 @@
               		  <warName>ROOT</warName>
                 </configuration>
             </plugin>
+
+        <plugin>
+            <groupId>external.atlassian.jgitflow</groupId>
+            <artifactId>jgitflow-maven-plugin</artifactId>
+            <version>1.0-m5.1</version>
+            <configuration>
+                <!-- see goals wiki page for configuration options -->
+            </configuration>
+        </plugin>
+
         </plugins>
       </build>
     </profile>
