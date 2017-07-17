@@ -31,6 +31,8 @@ To trigger a build when a push is made to GitHub, do the following:
 
 ### For Multibranch type jobs
 
+Note that each branch in the remote repository must contain a _Jenkinsfile_ in the root.
+
 1.  Create a _Multibranch Pipeline_ job in Jenkins, with the following config:
 
     - Add a Source, choosing _Git_ as the type.
